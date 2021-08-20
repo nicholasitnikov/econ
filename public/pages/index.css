@@ -1,0 +1,79 @@
+
+@import url('../vendor/normalize.css');
+@import url('../vendor/fonts.css');
+
+@import url('../blocks/next/next.css');
+
+@import url('../blocks/header/header.css');
+@import url('../blocks/header/__logo/header__logo.css');
+@import url('../blocks/header/__logo-image/header__logo-image.css');
+@import url('../blocks/header/__cart-link/header__cart-link.css');
+@import url('../blocks/header/__cart-link-total/header__cart-link-total.css');
+@import url('../blocks/header/__cart-link-text/header__cart-link-text.css');
+@import url('../blocks/header/__cart-link-image/header__cart-link-image.css');
+
+@import url('../blocks/hero/hero.css');
+@import url('../blocks/hero/__heading/hero__heading.css');
+
+@import url('../blocks/categorties/categories.css');
+@import url('../blocks/categorties/__element/categories__element.css');
+@import url('../blocks/categorties/__element/_theme/categories__element_theme_dark.css');
+@import url('../blocks/categorties/__filter-clean/categories__filter-clean.css');
+
+@import url('../blocks/products/products.css');
+@import url('../blocks/product/product.css');
+@import url('../blocks/product/__image/product__image.css');
+@import url('../blocks/product/__heading/product__heading.css');
+@import url('../blocks/product/__heading-link/product__heading-link.css');
+
+@import url('../blocks/add-to-cart/add-to-cart.css');
+@import url('../blocks/add-to-cart/_theme/add-to-cart_theme_dark.css');
+@import url('../blocks/add-to-cart/__text/add-to-cart__text.css');
+@import url('../blocks/add-to-cart/__text/_theme/add-to-cart__text_theme_dark.css');
+@import url('../blocks/add-to-cart/__price/add-to-cart__price.css');
+@import url('../blocks/add-to-cart/__label/add-to-cart__label.css');
+@import url('../blocks/add-to-cart/__label/_theme/add-to-cart__label_theme_dark.css');
+
+@import url('../blocks/footer/footer.css');
+@import url('../blocks/footer/__copyright/footer__copyright.css');
+@import url('../blocks/footer/__link/footer__link.css');
+
+@import url('../blocks/product-item/product-item.css');
+@import url('../blocks/product-item/__info/product-item__info.css');
+@import url('../blocks/product-item/__image/product-item__image.css');
+@import url('../blocks/product-item/__heading/product-item__heading.css');
+@import url('../blocks/product-item/__description/product-item__description.css');
+
+@import url('../blocks/checkout/checkout.css');
+@import url('../blocks/cart/cart.css');
+@import url('../blocks/cart/__heading/cart__heading.css');
+@import url('../blocks/cart/__item-heading/cart__item-heading.css');
+@import url('../blocks/cart/__item-heading-link/cart__item-heading-link.css');
+@import url('../blocks/cart/__item-image/cart__item-image.css');
+@import url('../blocks/cart/__item-price/cart__item-price.css');
+@import url('../blocks/cart/__item-quantity-contol/cart__item-quantity-control.css');
+@import url('../blocks/cart/__item-quantity-contol/_icon/cart__item_quantity-control_icon_minus.css');
+@import url('../blocks/cart/__item-quantity-contol/_icon/cart__item_quantity-control_icon_plus.css');
+@import url('../blocks/cart/__item-quantity/cart__item-quantity.css');
+@import url('../blocks/cart/__item/cart__item.css');
+@import url('../blocks/cart/__items/cart__items.css');
+@import url('../blocks/cart/__total-label/cart__total-label.css');
+@import url('../blocks/cart/__total-price/cart__total-price.css');
+@import url('../blocks/cart/__total/cart__total.css');
+@import url('../blocks/cart/__item-quantity-value/cart__item-quantity-value.css');
+
+@import url('../blocks/order/order.css');
+@import url('../blocks/order/__complete/order__complete.css');
+@import url('../blocks/order/__form/order__form.css');
+@import url('../blocks/order/__heading/order__heading.css');
+@import url('../blocks/order/__radio-caption/order__radio-caption.css');
+@import url('../blocks/order/__radio-input/order__radio-input.css');
+@import url('../blocks/order/__radio-label/order__radio-label.css');
+@import url('../blocks/order/__radio-label/_selected/order__radio-label_selected.css');
+@import url('../blocks/order/__radio/order__radio.css');
+@import url('../blocks/order/__subheading/order__subheading.css');
+@import url('../blocks/order/__textarea/order__textarea.css');
+@import url('../blocks/order/__textfield/order__textfield.css');
+
+@import url('../blocks/thankyou/thankyou.css');
+@import url('../blocks/thankyou/__heading/thankyou__heading.css');

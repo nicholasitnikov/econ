@@ -1,0 +1,17 @@
+.order__radio-label {
+    padding-left: 35px;
+    padding-top: 3px;
+    background-image: url('/assets/images/radio-off.svg');
+    background-position: 0% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    line-height: 1.15;
+    margin: 0;
+    cursor: pointer;
+    transition: opacity .2s ease-out;
+}
+
+.order__radio-label:hover {
+    opacity: .8;
+}

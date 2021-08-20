@@ -1,0 +1,7 @@
+.cart__item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 35px 25px 35px 0;
+    border-bottom: 1px solid #ccc;
+}

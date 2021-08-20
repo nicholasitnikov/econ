@@ -1,0 +1,10 @@
+.products {
+    display: grid;
+    grid-gap: 70px 70px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
+    align-items: end;
+    padding: 0;
+    margin: 80px auto;
+    box-sizing: border-box;
+    max-width: 1280px;
+}

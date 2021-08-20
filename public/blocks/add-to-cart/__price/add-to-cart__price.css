@@ -1,0 +1,8 @@
+.add-to-cart__price {
+    display: inline-block;
+    padding: 0 0 0 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.15;
+    margin: 0;
+}

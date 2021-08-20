@@ -1,0 +1,8 @@
+.header__cart-link-total {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    font-weight: 800;
+}

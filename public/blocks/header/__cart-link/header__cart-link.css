@@ -1,0 +1,12 @@
+.header__cart-link {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    transition: opacity .2s ease-out;
+}
+
+.header__cart-link:hover {
+    opacity: .6;
+}

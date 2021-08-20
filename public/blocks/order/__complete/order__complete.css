@@ -1,0 +1,15 @@
+.order__complete {
+    margin: 25px 0;
+    background: black;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: opacity .2s ease-out;
+}
+
+.order__complete:hover {
+    opacity: .8;
+}

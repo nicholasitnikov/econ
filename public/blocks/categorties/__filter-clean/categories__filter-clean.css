@@ -1,0 +1,13 @@
+.categories__filter-clean {
+    margin: 0;
+    cursor: pointer;
+    padding: 3px 7px 1px;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin-left: 5px;
+    transition: opacity .2s ease-out;
+}
+
+.categories__filter-clean:hover {
+    opacity: .6;
+}

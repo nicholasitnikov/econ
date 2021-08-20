@@ -1,0 +1,11 @@
+.categories__element {
+    margin: 0;
+    padding-right: 20px;
+    color: #888;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.categories__element:hover {
+    opacity: .6;
+}

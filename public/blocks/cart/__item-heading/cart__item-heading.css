@@ -1,0 +1,8 @@
+.cart__item-heading {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0 25px;
+    border-bottom: 1px solid #ccc;
+}

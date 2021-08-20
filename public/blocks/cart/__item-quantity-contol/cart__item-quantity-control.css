@@ -1,0 +1,11 @@
+.cart__item-quantity-control {
+    
+    width: 20px;
+    height: 20px;
+    
+    
+  }
+
+  .cart__item-quantity-control:hover {
+      opacity: .6;
+  }
