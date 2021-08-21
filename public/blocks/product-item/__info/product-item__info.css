@@ -1,7 +1,15 @@
 .product-item__info {
+    padding-left: 10%;
     display: flex;
     width: 50%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+@media screen and (max-width: 800px) {
+    .product-item__info {
+        padding-left: 0;
+        width: 100%;
+    }
 }

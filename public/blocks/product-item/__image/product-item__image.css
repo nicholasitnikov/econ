@@ -1,4 +1,27 @@
 .product-item__image {
     width: auto;
     height: 500px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 1320px) {
+    .product-item__image {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .product-item__image {
+        width: 350px;
+        height: 350px;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .product-item__image {
+        width: 100%;
+        height: auto;
+    }
 }

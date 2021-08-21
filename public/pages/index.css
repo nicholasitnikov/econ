@@ -46,6 +46,9 @@
 
 @import url('../blocks/checkout/checkout.css');
 @import url('../blocks/cart/cart.css');
+@import url('../blocks/empty-cart/empty-cart.css');
+@import url('../blocks/empty-cart/__icon/empty-cart__icon.css');
+@import url('../blocks/empty-cart/__heading/empty-cart__heading.css');
 @import url('../blocks/cart/__heading/cart__heading.css');
 @import url('../blocks/cart/__item-heading/cart__item-heading.css');
 @import url('../blocks/cart/__item-heading-link/cart__item-heading-link.css');

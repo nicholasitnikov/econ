@@ -18,3 +18,9 @@
 .order__textarea:disabled {
     opacity: .4;
 }
+
+@media screen and (max-width: 1024px) {
+    .order__textarea {
+        max-width: 350px;
+    }
+}

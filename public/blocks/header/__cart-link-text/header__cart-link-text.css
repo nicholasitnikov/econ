@@ -5,3 +5,9 @@
     font-size: 16px;
     color: black;
 }
+
+@media screen and (max-width: 530px) {
+    .header__cart-link-text {
+        display: none;
+    }
+}

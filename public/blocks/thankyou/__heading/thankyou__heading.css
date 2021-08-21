@@ -4,3 +4,15 @@
     margin: 0;
     padding: 0;
 }
+
+@media screen and (max-width: 375px) {
+    .thankyou__heading {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .thankyou__heading {
+        font-size: 48px;
+    }
+}

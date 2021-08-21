@@ -3,3 +3,19 @@
     box-sizing: border-box;
     max-width: 1280px;
 }
+
+@media screen and (max-width: 1320px) {
+    .footer {
+        padding: 0 40px;
+        margin: 25px auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        margin: 70px auto 40px;
+        align-items: center;
+    }
+}

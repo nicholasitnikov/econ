@@ -9,3 +9,15 @@
     box-sizing: border-box;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 1320px) {
+    .checkout {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .checkout {
+        flex-direction: column;
+    }
+}

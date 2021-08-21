@@ -14,3 +14,17 @@
 .order__textfield:focus {
     border-color: rgb(224, 224, 224);
 }
+
+@media screen and (max-width: 1024px) {
+    .order__textfield {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .order__textfield {
+        max-width: 100%;
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+}

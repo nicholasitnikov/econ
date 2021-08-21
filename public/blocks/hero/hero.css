@@ -11,3 +11,9 @@
     background-position: top;
     background-repeat: repeat, no-repeat;
 }
+
+@media screen and (max-width: 530px) {
+    .hero {
+        height: auto;
+    }
+}

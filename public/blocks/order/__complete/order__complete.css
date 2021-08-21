@@ -6,10 +6,20 @@
     font-size: 18px;
     padding: 10px 8px;
     border-radius: 6px;
+    box-sizing: border-box;
     cursor: pointer;
     transition: opacity .2s ease-out;
 }
 
 .order__complete:hover {
     opacity: .8;
+}
+
+.order__complete:disabled {
+    opacity: .4;
+}
+@media screen and (max-width: 1024px) {
+    .order__complete {
+        max-width: 350px;
+    }
 }

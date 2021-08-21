@@ -5,3 +5,16 @@
     padding: 35px 25px 35px 0;
     border-bottom: 1px solid #ccc;
 }
+
+@media screen and (max-width: 720px) {
+    .cart__item-image {
+        border-bottom: none;
+        padding: 35px 25px 20px 0;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .cart__item-image {
+        padding: 35px 0;
+    }
+}

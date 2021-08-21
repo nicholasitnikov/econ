@@ -3,7 +3,7 @@ import axios from 'axios'
 import CartContext from '../contexts/cartContext.js'
 import { useRouter } from 'next/router'
 
-const Order = (props) => {
+const Order = () => {
 
   const router = useRouter()
 
@@ -26,7 +26,7 @@ const Order = (props) => {
   }
 
   return(
-    <div className="order">
+    <div className="order order_disabled">
         <form className="order__form" onSubmit={(e) => completeOrder(e)}>
           <h2 className="order__heading">Order</h2>
           <input onChange={(e) => setOrder({...order, name: e.target.value})} value={order.name} className="order__textfield" type="text" maxLength="256" data-name="Name" placeholder="Your name" required />
@@ -55,7 +55,7 @@ const Order = (props) => {
             }>Delivery</span>
           </label>
           <textarea disabled={order.deliveryMethod == "self"} onChange={(e) => setOrder({...order, address: e.target.value})} value={order.address} className="order__textarea" placeholder="Address" data-name="Address" required={order.deliveryMethod == "courier"}></textarea>
-          <input className="order__complete" type="submit" value="Complete order" />
+          <input disabled={cart.length === 0} className="order__complete" type="submit" value="Complete order" />
         </form>
     </div>
   )

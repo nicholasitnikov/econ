@@ -1,8 +1,28 @@
 .cart__items {
     padding: 25px 0;
     display: grid;
-    grid-template-columns: 1fr minmax(min-content, 350px) 1fr 1fr;
+    grid-template-columns: 1fr minmax(min-content, 350px) 1fr max-content;
     grid-gap: 0;
     align-items: center;
     
+}
+
+@media screen and (max-width: 1024px) {
+    .cart__items {
+        padding: 0 0 25px;
+        grid-template-columns: 1fr 3fr 2fr 2fr;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .cart__items {
+        grid-template-columns: 200px 1fr;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .cart__items {
+        display: flex;
+        flex-direction: column;
+    }
 }

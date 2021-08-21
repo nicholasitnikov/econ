@@ -1,6 +1,12 @@
 .cart__total {
     display: flex;
-    margin-top: 1.5em;
+    margin-top: 35px;
     justify-content: flex-end;
     align-items: baseline;
+}
+
+@media screen and (max-width: 1024px) {
+    .cart__total {
+        margin: 0 0 35px;
+    }
 }

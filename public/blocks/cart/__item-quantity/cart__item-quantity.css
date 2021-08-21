@@ -8,3 +8,19 @@
     line-height: 1.15;
     padding: 0 5px;
 }
+
+@media screen and (max-width: 720px) {
+    .cart__item-quantity {
+        /* padding-left: 100px; */
+        /* padding-right: 5px;  */
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 7px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .cart__item-quantity {
+        padding: 7px 0;
+    }
+}

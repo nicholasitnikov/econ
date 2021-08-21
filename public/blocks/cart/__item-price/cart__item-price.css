@@ -5,4 +5,17 @@
     align-items: center;
     justify-content: flex-end;
     border-bottom: 1px solid #ccc;
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 720px) {
+    .cart__item-price {
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .cart__item-price {
+        padding: 5px 0 3px;
+    }
 }
