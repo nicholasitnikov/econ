@@ -21,10 +21,13 @@ const Product = (props) => {
       <Header />
 
       <div className="product-item">
-      <img className="product-item__image" src={props.product.image} />
+      <img className="product-item__image" src={`/products/images/${props.product.image}`} />
         <div className="product-item__info">
-          <h2 className="product-item__heading">{props.product.title}</h2>
-          <div className="product-item__description"><span>{props.product.description}</span></div>
+          <span className='product-item__caption'>${props.product.caption}</span>
+          <h2 className="product-item__heading">{`${props.product.brand} ${props.product.name}`}</h2>
+          <div className="product-item__description">{props.product.description}</div>
+          <div className="product-item__description">{`Состав: ${props.product.composition}`}</div>
+          <div className="product-item__description">{`Меры предосторожности: ${props.product.precautionary}`}</div>
           <ProductContext.Provider value={ { addToCartHandler } }>
             <AddToCart id={props.product.id} price={props.product.price} />
           </ProductContext.Provider>
@@ -40,7 +43,7 @@ const Product = (props) => {
 }
 
 export async function getServerSideProps(context) {
-  const res = await axios.get(`https://fakestoreapi.com/products/${context.params.id}`);
+  const res = await axios.get(`http://localhost:3000/api/products/${context.params.id}`);
   return {
     props: {
       product: res.data

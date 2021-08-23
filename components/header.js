@@ -9,7 +9,7 @@ const Header = (props) => {
   const calculateTotalPrice = () => {
 
     const total = cart.reduce((res, current) => {
-      return res += (current.quantity * current.price)
+      return res += (current.quantity * parseInt(current.price))
     }, 0)
     return Math.round(total * 100) / 100
 
@@ -24,9 +24,9 @@ const Header = (props) => {
       </Link>
       <Link href="/checkout">
         <a className="header__cart-link">
-          <div className="header__cart-link-text">Cart</div>
+          <div className="header__cart-link-text">Корзина</div>
           <img className="header__cart-link-image" src="/assets/images/shopping-cart.svg" alt="" />
-          <div className="header__cart-link-total">{`${calculateTotalPrice()} €`}</div>
+          <div className="header__cart-link-total">{`${calculateTotalPrice()} ₽`}</div>
         </a>
       </Link>
     </header>

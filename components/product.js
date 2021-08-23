@@ -22,15 +22,14 @@ const Product = (props) => {
 
   }
 
-  // <Options data={ props.product.options } />
-
   return(
     <div className="product" key={props.product.id}>
       <Link href={"/products/" + props.product.id}>
-        <img className="product__image" src={props.product.image} />
+        <img className="product__image" src={`/products/images/${props.product.image}`} />
       </Link>
       <Link href={"/products/" + props.product.id}><a className="product__heading-link">
-        <h2 className="product__heading">{ props.product.title }</h2>
+        <span className='product__caption'>{props.product.caption}</span>
+        <h2 className="product__heading">{`${props.product.brand} ${props.product.name}`}</h2>
       </a></Link>
       <ProductContext.Provider value={ {addToCartHandler, optionsHandler} }>     
         <AddToCart id={props.product.id} price={props.product.price} />

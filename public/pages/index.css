@@ -22,6 +22,7 @@
 
 @import url('../blocks/products/products.css');
 @import url('../blocks/product/product.css');
+@import url('../blocks/product/__caption/product__caption.css');
 @import url('../blocks/product/__image/product__image.css');
 @import url('../blocks/product/__heading/product__heading.css');
 @import url('../blocks/product/__heading-link/product__heading-link.css');
@@ -39,6 +40,7 @@
 @import url('../blocks/footer/__link/footer__link.css');
 
 @import url('../blocks/product-item/product-item.css');
+@import url('../blocks/product-item/__caption/product-item__caption.css');
 @import url('../blocks/product-item/__info/product-item__info.css');
 @import url('../blocks/product-item/__image/product-item__image.css');
 @import url('../blocks/product-item/__heading/product-item__heading.css');

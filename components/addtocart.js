@@ -21,8 +21,8 @@ const AddToCart = (props) => {
 
     return(
       <a className="add-to-cart add-to-cart_theme_dark" onClick={onClickHandler}>
-        <div className="add-to-cart__text add-to-cart__text_theme_dark">In cart</div>
-        <div className="add-to-cart__label add-to-cart__label_theme_dark">{ props.price } €</div>
+        <div className="add-to-cart__text add-to-cart__text_theme_dark">В корзине</div>
+        <div className="add-to-cart__label add-to-cart__label_theme_dark">{ parseInt(props.price) } ₽</div>
         <div className="add-to-cart__label add-to-cart__label_theme_dark">x {findProductInCart(props.id, cart).quantity}</div>
       </a>
     )
@@ -31,8 +31,8 @@ const AddToCart = (props) => {
 
     return(
       <a className="add-to-cart" onClick={onClickHandler}>
-        <div className="add-to-cart__text">Add to cart</div>
-        <div className="add-to-cart__price">{ props.price } €</div>
+        <div className="add-to-cart__text">Добавить в корзину</div>
+        <div className="add-to-cart__price">{ parseInt(props.price) } ₽</div>
       </a>
     )
 

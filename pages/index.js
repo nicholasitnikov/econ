@@ -25,7 +25,7 @@ const Home = (props) => {
   return(
     <>  
       <Head>
-        <title>Econ Store — basic clothes from local designers</title>
+        <title>Econ Store — best smells from local perfumers</title>
       </Head>
       <Header withHero></Header>
       <Hero />
@@ -40,13 +40,15 @@ const Home = (props) => {
 }
 
 export async function getServerSideProps() {
-  const products = await axios.get('https://fakestoreapi.com/products/');
-  const categories = await axios.get('https://fakestoreapi.com/products/categories');
+  const products = await axios.get('http://localhost:3000/api/products');
+  const categories = products.data.reduce((res, current) => {
+    return res.includes(current.category) ? res : res.concat(current.category);
+  }, [])
 
   return {
     props: {
       products: products.data,
-      categories: categories.data
+      categories
     }
   }
 }

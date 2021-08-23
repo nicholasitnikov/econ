@@ -1,6 +1,6 @@
 .categories__element {
     margin: 0;
-    padding-right: 20px;
+    padding: 0 20px;
     color: #888;
     font-size: 20px;
     cursor: pointer;

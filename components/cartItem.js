@@ -7,10 +7,10 @@ const CartItem = (props) => {
   const { increaseQuantity, decreaseQuantity } = useContext(CartContext)
 
   return(<>
-      <img className="cart__item-image" src={props.product.thumbnail} alt="" />
+      <img className="cart__item-image" src={`/products/images/${props.product.image}`} alt="" />
       <div className="cart__item-heading">
         <Link href={"/products/" + props.product.id}>
-          <a className='cart__item-heading-link'>{ props.product.name }</a>
+          <a className='cart__item-heading-link'>{ `${props.product.brand} ${props.product.name}` }</a>
         </Link>
       </div>
       <div className="cart__item-quantity">
@@ -18,7 +18,7 @@ const CartItem = (props) => {
         <span className="cart__item-quanity-value">{ props.product.quantity }</span>
         <span className="cart__item-quantity-control cart__item-quantity-control_icon_plus" onClick={() => increaseQuantity(props.product)}></span>
       </div>
-      <div className="cart__item-price">{`${props.product.price} €`}</div>
+      <div className="cart__item-price">{`${parseInt(props.product.price)} ₽`}</div>
   </>)
 
 }

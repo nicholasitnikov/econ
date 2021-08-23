@@ -1,19 +1,8 @@
-const csv = require('csv-parser');
-const fs = require('fs');
-const path =  require('path');
+import axios from "axios";
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
 
-    const results = [];
-
-    fs.createReadStream(path.join(__dirname, '..', '..', '../../pages/api/products/db.csv'))
-        .pipe(csv())
-        .on('data', (data) => results.push(data))
-        .on('end', () => {
-            res.status(200).json({ data: results })
-        });
-    
-    
-    
+    let productsResponse = await axios.get('http://localhost:3000/db.json');
+    res.status(200).json(productsResponse.data);
 
 }
