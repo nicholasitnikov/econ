@@ -1,6 +1,5 @@
 /* _app.js */
 import React, { useState, useEffect, useContext, useReducer } from "react";
-import App, { Container } from "next/app";
 import Head from "next/head";
 import CartReducer from '../reducers/cartReducer.js'
 import CartContext from '../contexts/cartContext.js'
