@@ -43,7 +43,8 @@ const Product = (props) => {
 }
 
 export async function getServerSideProps(context) {
-  const res = await axios.get(`http://localhost:3000/api/products/${context.params.id}`);
+  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://econ.store' : 'http://localhost:3000';
+  const res = await axios.get(`${baseUrl}/api/products/${context.params.id}`);
   return {
     props: {
       product: res.data
