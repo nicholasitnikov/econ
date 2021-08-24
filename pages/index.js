@@ -40,7 +40,8 @@ const Home = (props) => {
 }
 
 export async function getServerSideProps() {
-  const products = await axios.get('http://localhost:3000/api/products');
+  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://econ.store' : 'http://localhost:3000';
+  const products = await axios.get(`${baseUrl}/api/products`);
   const categories = products.data.reduce((res, current) => {
     return res.includes(current.category) ? res : res.concat(current.category);
   }, [])
